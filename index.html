@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criptografar e Descriptografar Arquivo com JavaScript</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <h2>Criptografar e Descriptografar Arquivo</h2>
+
+  <!-- Input de arquivo -->
+  <h3>Criptografar Arquivo</h3>
+  <input type="file" id="fileInput" />
+  <input type="password" id="password" placeholder="Digite a chave secreta" />
+  <button onclick="criptografarArquivo()">Criptografar</button>
+
+  <h3>Descriptografar Arquivo</h3>
+  <input type="file" id="fileInputDecrypt" />
+  <input type="password" id="passwordDecrypt" placeholder="Digite a chave secreta" />
+  <button onclick="descriptografarArquivo()">Descriptografar</button>
+
+  <h3>Arquivo Criptografado</h3>
+  <a id="downloadLink" style="display: none" href="#">Baixar Arquivo Criptografado</a>
+
+  <h3>Conteúdo Descriptografado</h3>
+  <pre id="decryptedContent"></pre>
+
+ 
+</body>
+</html>
